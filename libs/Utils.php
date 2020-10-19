@@ -12,7 +12,7 @@ function includeDir($path)
     }
 }
 
-function includeDirClass($path,$basePath = BASEPATH ,$server='')
+function includeDirClass($path,$basePath = BASEPATH , $server = '')
 {
     $dir = new \RecursiveDirectoryIterator($path);
     $iterator = new \RecursiveIteratorIterator($dir);

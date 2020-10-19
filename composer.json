@@ -1,0 +1,8 @@
+{
+    "require": {
+        "illuminate/database": "^7.28",
+        "illuminate/events": "^7.28",
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": { "files": ["Database.php"] }
+}

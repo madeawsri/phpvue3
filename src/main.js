@@ -1,11 +1,11 @@
-import { createApp,defineComponent,computed   } from 'vue'
+import { createApp, defineComponent, computed } from 'vue'
 import App from './App.js';
 const app = createApp(App);
 
 import Home from './pages/Home.js';
 import Test from './components/Test.js';
-app.component('Test',Test);
-app.component('Home',Home);
+app.component('Test', Test);
+app.component('Home', Home);
 
 import router from './router/index.js';
 //-- อ่าน link นี้เพื่อประยุกต์ router เพิ่ม ---
@@ -23,7 +23,7 @@ window.app = app;
 window.store = store;
 
 //--- Log test ----------
-console.log('router--->',router);
-console.log('store--->',store);
-console.log('app--->',app);
-console.log('router-->',router.currentRoute.value);
+console.log('router--->', router);
+console.log('store--->', store);
+console.log('app--->', app);
+console.log('router-->', router.currentRoute.value);
