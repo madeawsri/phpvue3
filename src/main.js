@@ -2,10 +2,14 @@ import { createApp, defineComponent, computed } from 'vue'
 import App from './App.js';
 const app = createApp(App);
 
-import Home from './pages/Home.js';
-import Test from './components/Test.js';
-app.component('Test', Test);
-app.component('Home', Home);
+/*
+import Sidebar from './components/sidebar'
+import Navbar from './components/navbar'
+import Footer from './components/footer'
+app.component('Sidebar', Sidebar)
+app.component('Navbar', Navbar)
+app.component('Footer', Footer)
+*/
 
 import router from './router/index.js';
 //-- อ่าน link นี้เพื่อประยุกต์ router เพิ่ม ---

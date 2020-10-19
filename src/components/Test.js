@@ -1,4 +1,4 @@
-import {useStore} from 'vuex';
+import { useStore } from 'vuex';
 import { computed } from 'vue';
 
 export default {
@@ -8,6 +8,7 @@ export default {
         console.log('test--->', count);
         const decrement = () => {
             store.state.count--;
+            
         }
         return {
             count,
@@ -17,6 +18,5 @@ export default {
     template: `<div class="w-full bg-red-300">test count--> {{ $store.state.count }}//{{count}}
                <input class=" " type="button" value='Add'  @click="$store.commit('increment')">&nbsp;&nbsp;
                <input class=" " type="button" value='Dec'  @click="decrement">
-               </div>
-            `
+               </div>`
 }
